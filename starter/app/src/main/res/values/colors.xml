@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">@color/call_to_action_button</color>
+    <color name="colorWite">#FFFFFF</color>
+    <color name="HighlightedEditText">#9BFF74</color>
+    <color name="HintOfEditText">#C1C1C1</color>
+    <color name="call_to_action_button">#1FDD0A</color>
+    <color name="SecondaryButton">#707070</color>
 </resources>
