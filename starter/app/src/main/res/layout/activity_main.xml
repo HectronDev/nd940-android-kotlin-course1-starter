@@ -22,12 +22,14 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/loginFragment"
-            android:name="com.udacity.shoestore.LoginFragment"
+        <fragment
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/layout_margin" />
+            android:layout_marginTop="@dimen/layout_margin"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
