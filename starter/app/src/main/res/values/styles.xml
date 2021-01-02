@@ -29,7 +29,7 @@
 
     <style name="CallToActionButtonStyle">
         <item name="android:layout_height">45dp</item>
-        <item name="android:backgroundTint">@color/call_to_action_button</item>
+        <item name="android:backgroundTint">@color/colorPrimary</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
         <item name="android:textColor">@color/colorWite</item>
     </style>
@@ -48,10 +48,19 @@
         <item name="android:ems">10</item>
         <item name="android:fontFamily">@font/montserrat</item>
         <item name="android:foregroundTint">@color/colorWite</item>
-        <item name="android:importantForAutofill">no</item>
         <item name="android:textColor">@color/colorWite</item>
         <item name="android:textColorHighlight">@color/HighlightedEditText</item>
         <item name="android:textColorHint">@color/HintOfEditText</item>
+    </style>
+
+    <style name="FloatingButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/layout_margin</item>
+        <item name="android:layout_marginEnd">@dimen/layout_margin</item>
+        <item name="android:layout_marginBottom">@dimen/layout_margin</item>
+        <item name="android:backgroundTint">@color/call_to_action_button</item>
     </style>
 
 </resources>

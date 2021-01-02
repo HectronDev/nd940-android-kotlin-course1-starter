@@ -12,21 +12,28 @@ import timber.log.Timber
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var appBarConfiguration: AppBarConfiguration
-
+    private val navController by lazy { findNavController(R.id.myNavHostFragment) }
+    private val appBarConfiguration by lazy {
+        AppBarConfiguration(
+            setOf(
+                R.id.loginFragment,
+                R.id.shoeListFragment
+            )
+        )
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         Timber.plant(Timber.DebugTree())
-        val navController = this.findNavController(R.id.myNavHostFragment)
-//        NavigationUI.setupActionBarWithNavController(this,navController)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
+        setSupportActionBar(binding.toolbar)
+        NavigationUI.setupActionBarWithNavController(this,navController, appBarConfiguration)
     }
-
+    //MARK: NavigateUp
     override fun onSupportNavigateUp(): Boolean {
-        val navController = this.findNavController(R.id.myNavHostFragment)
         return NavigationUI.navigateUp(navController,appBarConfiguration)
     }
+
+
 
 }

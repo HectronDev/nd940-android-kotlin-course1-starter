@@ -9,4 +9,22 @@
     <string name="email_hint">e.g. user@domain.com</string>
     <string name="label_password">Password:</string>
     <string name="btn_create_an_account">Create an account</string>
+    <string name="welcome">Hey, Welcome!</string>
+    <string name="welcome_text">How many times do you forget about how many shoes do you have?\n\nHi! and welcome to your inventory app, here you can add your shoes to make a list of them. Please enjoy it!</string>
+    <string name="lets_get_started">Let\'s get started!</string>
+    <string name="show_me_how">Show me how!</string>
+    <string name="instructions_text">Just need to press the \"Add\" button, localized at right bottom corner and fill the Shoe\'s data. \n\nAnd that\'s it! You don\'t need to do anything else! Just enjoy it!</string>
+    <string name="instructions_title">Follow this instructions \n 🤗</string>
+    <string name="btn_floating_description">Button to add a shoe</string>
+    <string name="label_shoe_name">Shoe name:</string>
+    <string name="shoeNameHint">My fabulous shoe name...</string>
+    <string name="label_Company">Company:</string>
+    <string name="company_hint">E.g. Shoe\'s Brand</string>
+    <string name="label_description">Description:</string>
+    <string name="log_out">Log out</string>
+    <string name="label_shoe_size">Shoe size:</string>
+    <string name="shoeSizeHint">E.g. 27.0</string>
+    <string name="description_hint">E.g. This is my brand new awesome shoe ...</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
 </resources>

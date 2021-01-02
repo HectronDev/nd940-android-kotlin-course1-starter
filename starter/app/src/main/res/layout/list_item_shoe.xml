@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview_dark_background"
+        android:padding="@dimen/small_padding">
+
+
+        <TextView
+            android:id="@+id/textView_item_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:fontFamily="@font/montserrat_bold"
+            android:linksClickable="true"
+            android:padding="@dimen/small_padding"
+            android:textSize="16sp"
+            android:textColor="@color/colorWite"
+            app:layout_constraintEnd_toStartOf="@+id/textView_item_name"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Company" />
+
+        <TextView
+            android:id="@+id/textView_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:paddingStart="@dimen/small_padding"
+            android:paddingEnd="@dimen/small_padding"
+            android:textSize="16sp"
+            android:textColor="@color/colorWite"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView_item_company"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/textView_item_company"
+            tools:text="Name" />
+
+        <TextView
+            android:id="@+id/textView_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/small_padding"
+            android:textColor="@color/colorWite"
+            app:layout_constraintStart_toStartOf="@+id/textView_item_company"
+            app:layout_constraintTop_toBottomOf="@+id/textView_item_company"
+            tools:text="Size" />
+
+        <TextView
+            android:id="@+id/textView_item_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="@dimen/small_padding"
+            android:textColor="@color/colorWite"
+            app:layout_constraintStart_toStartOf="@+id/textView_item_size"
+            app:layout_constraintTop_toBottomOf="@+id/textView_item_size"
+            tools:text="Description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
